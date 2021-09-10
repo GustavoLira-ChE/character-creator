@@ -39,37 +39,37 @@ function App() {
           </p>
         </header>
         <div className={styles.controlColumn}>
-          <ControlPane
+          <ControlPane 
             title="Bodies"
             options={bodyOptions}
             currentOption={body}
             handleSelectOption={setBody}
           />
-          <ControlPane
+          <ControlPane 
             title="Heads"
             options={headOptions}
             currentOption={head}
             handleSelectOption={setHead}
           />
-          <ControlPane
+          <ControlPane 
             title="Faces"
             options={faceOptions}
             currentOption={face}
             handleSelectOption={setFace}
           />
-          <ControlPane
+          <ControlPane 
             title="Accessories"
             options={accessoryOptions}
             currentOption={accessory}
             handleSelectOption={setAccessory}
           />
-          <ControlPane
+          <ControlPane 
             title="Skin Color"
             options={skinColorOptions}
             currentOption={skinColor}
             handleSelectOption={setSkinColor}
           />
-          <ControlPane
+          <ControlPane 
             title="Clothing Color"
             options={clothesColorOptions}
             currentOption={clothesColor}
@@ -77,7 +77,8 @@ function App() {
           />
         </div>
       </MaxWidthWrapper>
-
+      <div className={styles.barBackground}>
+      </div>
       <div className={styles.characterWrapper}>
         <Character
           body={body}
